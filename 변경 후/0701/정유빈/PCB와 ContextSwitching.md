@@ -68,7 +68,7 @@ Process Metadata에는 다음과 같은 정보들이 들어있다.
 
  <h2> Context Switching의 뜻 </h2>
 
-- cpu가 현재 실행하고 있는 Task(Process, Thread)의 사애를 저장하고, 다음 진행할 Task의 상태 및 Register에 대한 정보(Context)를 읽어 새로운 Task의 Context 정보로 교체하는 과정을 말한다.
+- cpu가 현재 실행하고 있는 Task(Process, Thread)의 상태를 저장하고, 다음 진행할 Task의 상태 및 Register에 대한 정보(Context)를 읽어 새로운 Task의 Context 정보로 교체하는 과정을 말한다.
 - 다르게 말하면, <b> CPU가 이전의 프로세스 상태를 PCB에 보관하고, 또 다른 프로세스의 정보를 PCB에 읽어서 레지스터에 적재하는 과정 </b> 을 말한다.
 - 또 다르게 말하면, <b> 다중 프로그래밍 시스템에서 CPU가 할당되는 프로세스를 변경하기 위해 현재 CPU를 사용하여 실행되고 있는 프로세서의 상태 정보를 저장하고 제어권을 인터럽트 서비스 루틴(ISR)에게 넘기는 작업 </b>을 말한다.
 -  여기서 Context란 CPU가 다루는 Task(Process, Thread)에 대한 정보를 말하고, 대부분의 정보는 Register에 저장되고 PCB로 관리된다.
